@@ -1,7 +1,9 @@
-import 'package:delivery_thizer/login_page.dart';
+import 'package:delivery_thizer/app/ui/login/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'app/ui/counter.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,6 +20,9 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.cantarellTextTheme(Theme.of(context).textTheme),
       ),
       home: LoginPage(),
+      routes: {
+        '/counter': (_) => Counter(),
+      },
     );
   }
 }
@@ -25,3 +30,4 @@ class MyApp extends StatelessWidget {
 //figma
 //dribble
 // gabul dev
+//20:00
